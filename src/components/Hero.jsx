@@ -51,7 +51,7 @@ export default function Hero() {
   const s = slides[current];
 
   return (
-    <section id="home" className={`relative min-h-screen flex flex-col justify-center bg-gradient-to-b ${s.bg} transition-all duration-1000 overflow-hidden`}>
+    <section id="home" className={`relative flex flex-col justify-center bg-gradient-to-b ${s.bg} transition-all duration-1000 overflow-hidden`}>
       {/* Grid overlay */}
       <div className="absolute inset-0 opacity-[0.04]"
         style={{ backgroundImage: 'linear-gradient(#F5C300 1px, transparent 1px), linear-gradient(90deg, #F5C300 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
@@ -60,7 +60,7 @@ export default function Hero() {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full blur-[120px] opacity-20"
         style={{ backgroundColor: '#F5C300' }} />
 
-      <div className="relative  max-w-6xl mx-auto px-4 pt-28 pb-16">
+      <div className="relative md:w-full max-w-6xl mx-auto px-4 pt-28 pb-16">
         <div key={current} className={`transition-all duration-700 ease-out ${direction === 1 ? 'slide-in-right' : direction === -1 ? 'slide-in-left' : ''}`}>
 
           {/* Badge */}
