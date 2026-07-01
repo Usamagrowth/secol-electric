@@ -48,22 +48,22 @@ const services = [
 
 function ServiceItem({ s, isOpen, onToggle }) {
   return (
-    <div className={`border rounded-xl overflow-hidden transition-all duration-300 ${isOpen ? 'border-[#F5C300]/40 bg-[#111111]' : 'border-[#1E1E1E] bg-[#0D0D0D]'}`}>
+    <div className={`border rounded-xl overflow-hidden transition-all duration-300 ${isOpen ? 'border-[#F5C300]/40 bg-gray-50' : 'border-gray-200 bg-white'}`}>
       <button onClick={onToggle}
         className="w-full flex items-center gap-4 px-5 py-4 text-left">
         <div className="w-9 h-9 bg-[#F5C300] rounded-lg flex items-center justify-center shrink-0">
           {s.icon}
         </div>
-        <span className="font-bold text-white flex-1 text-sm md:text-base">{s.title}</span>
+        <span className="font-bold text-gray-900 flex-1 text-sm md:text-base">{s.title}</span>
         <ChevronDown size={18} className={`text-gray-500 transition-transform duration-300 shrink-0 ${isOpen ? 'rotate-180 text-[#F5C300]' : ''}`} />
       </button>
 
       {isOpen && (
         <div className="px-5 pb-5 animate-fade-up">
-          <p className="text-gray-400 text-sm leading-relaxed mb-4">{s.desc}</p>
+          <p className="text-gray-600 text-sm leading-relaxed mb-4">{s.desc}</p>
           <ul className="space-y-2 mb-5">
             {s.items.map(item => (
-              <li key={item} className="flex items-center gap-2.5 text-sm text-gray-300">
+              <li key={item} className="flex items-center gap-2.5 text-sm text-gray-700">
                 <div className="w-4 h-4 rounded-full bg-[#F5C300]/15 flex items-center justify-center shrink-0">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#F5C300]" />
                 </div>
@@ -85,7 +85,7 @@ export default function Services() {
   const [openIdx, setOpenIdx] = useState(0);
 
   return (
-    <section id="services" className="py-20 bg-[#080808]">
+    <section id="services" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px w-8 bg-[#F5C300]" />
@@ -93,10 +93,10 @@ export default function Services() {
         </div>
 
         <div className="md:flex md:gap-16 md:items-start mb-12">
-          <h2 className="text-3xl md:text-4xl font-black leading-tight md:max-w-sm">
+          <h2 className="text-3xl md:text-4xl font-black leading-tight md:max-w-sm text-gray-900">
             Reliable Electrical & Solar Solutions <span className="text-[#F5C300]">for Modern Homes and Businesses</span>
           </h2>
-          <p className="text-gray-400 leading-relaxed mt-4 md:mt-1 md:max-w-sm">
+          <p className="text-gray-600 leading-relaxed mt-4 md:mt-1 md:max-w-sm">
             We provide safe, efficient, and long-lasting electrical and solar solutions for residential, commercial, and industrial projects.
           </p>
         </div>

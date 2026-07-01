@@ -6,21 +6,21 @@ const slides = [
     headline: 'Go Solar, Cut Costs.',
     sub: 'Uninterrupted Power. Every Day.',
     desc: 'Professional solar panel and inverter installations tailored for Nigerian homes and businesses — designed to deliver clean energy and eliminate downtime.',
-    bg: 'from-[#001a0a] via-[#000f05] to-[#0A0A0A]',
+    bg: 'from-[#f0f9f4] via-[#f5f5f5] to-[#FFFFFF]',
     badge: 'Solar Panels • Inverters • Batteries',
   },
    {
     headline: 'Reliable Electrical & Solar Solutions',
     sub: 'for Modern Homes and Businesses',
     desc: 'SECOL Electric delivers professional electrical, solar, and engineering solutions designed for safety, efficiency, reliability, and long-term performance.',
-    bg: 'from-[#1a1200] via-[#0f0a00] to-[#0A0A0A]',
+    bg: 'from-[#fff9e6] via-[#faf5f0] to-[#FFFFFF]',
     badge: 'Electrical • Solar • Smart Solutions',
   },
   {
     headline: 'Secure, Automate.',
     sub: 'Smart Solutions for Modern Living.',
     desc: 'From CCTV surveillance to smart lighting and automated power control — we help you take full control of your home or office with intelligent technology.',
-    bg: 'from-[#00111a] via-[#00080f] to-[#0A0A0A]',
+    bg: 'from-[#e6f0ff] via-[#f0f5fa] to-[#FFFFFF]',
     badge: 'CCTV • Smart Home • Automation',
   },
 ];
@@ -70,14 +70,14 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-full font-black leading-[1.05] tracking-tight mb-2 max-w-2xl">
+          <h1 className="text-4xl md:text-full font-black leading-[1.05] tracking-tight mb-2 max-w-2xl text-gray-950">
             {s.headline}
           </h1>
           <h2 className="text-4xl md:text-full font-black leading-[1.05] tracking-tight mb-6 max-w-2xl text-[#F5C300]">
             {s.sub}
           </h2>
 
-          <p className="text-gray-400 text-base md:text-lg max-w-xl leading-relaxed mb-10">
+          <p className="text-gray-600 text-base md:text-lg max-w-xl leading-relaxed mb-10">
             {s.desc}
           </p>
 
@@ -88,7 +88,7 @@ export default function Hero() {
               Request a Quote <ArrowRight size={16} />
             </a>
             <a href="#projects"
-              className="flex items-center gap-2 border border-white/20 text-white font-semibold px-6 py-3.5 rounded-full hover:border-[#F5C300]/50 hover:text-[#F5C300] transition-colors text-sm">
+              className="flex items-center gap-2 border border-gray-300 text-gray-700 font-semibold px-6 py-3.5 rounded-full hover:border-[#F5C300]/50 hover:text-[#F5C300] transition-colors text-sm">
              Recent Projects
             </a>
           </div>
@@ -100,7 +100,7 @@ export default function Hero() {
             <button
               key={i}
               onClick={() => { setDirection(i > current ? 1 : -1); setCurrent(i); }}
-              className={`h-1.5 rounded-full transition-all duration-300 ${i === current ? 'w-8 bg-[#F5C300]' : 'w-3 bg-[#2A2A2A] hover:bg-[#3A3A3A]'}`}
+              className={`h-1.5 rounded-full transition-all duration-300 ${i === current ? 'w-8 bg-[#F5C300]' : 'w-3 bg-gray-300 hover:bg-gray-400'}`}
             />
           ))}
         </div>

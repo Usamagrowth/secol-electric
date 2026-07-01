@@ -60,7 +60,7 @@ export default function Reviews() {
   const r = reviews[idx];
 
   return (
-    <section id="reviews" className="py-20 bg-[#0A0A0A]">
+    <section id="reviews" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px w-8 bg-[#F5C300]" />
@@ -69,22 +69,22 @@ export default function Reviews() {
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-black leading-tight">
+            <h2 className="text-3xl md:text-4xl font-black leading-tight text-gray-900">
               What Our <span className="text-[#F5C300]">Clients Say</span>
             </h2>
             <div className="flex items-center gap-3 mt-3">
-              <div className="flex items-center gap-1.5 bg-[#1A1A1A] border border-[#2A2A2A] rounded-full px-3 py-1.5">
+              <div className="flex items-center gap-1.5 bg-gray-100 border border-gray-300 rounded-full px-3 py-1.5">
                 <Stars count={5} />
-                <span className="text-white font-bold text-sm ml-1">4.6</span>
+                <span className="text-gray-900 font-bold text-sm ml-1">4.6</span>
                 <span className="text-gray-500 text-xs">/ 14+ reviews</span>
               </div>
             </div>
           </div>
           <div className="flex gap-2">
-            <button onClick={prev} className="w-10 h-10 rounded-full border border-[#2A2A2A] flex items-center justify-center hover:border-[#F5C300]/50 transition-colors">
+            <button onClick={prev} className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#F5C300]/50 transition-colors text-gray-700">
               <ChevronLeft size={18} />
             </button>
-            <button onClick={next} className="w-10 h-10 rounded-full border border-[#2A2A2A] flex items-center justify-center hover:border-[#F5C300]/50 transition-colors">
+            <button onClick={next} className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:border-[#F5C300]/50 transition-colors text-gray-700">
               <ChevronRight size={18} />
             </button>
           </div>
@@ -93,16 +93,16 @@ export default function Reviews() {
         {/* Featured + grid */}
         <div className="grid md:grid-cols-2 gap-4">
           {/* Featured */}
-          <div className="bg-[#111111] border border-[#F5C300]/25 rounded-2xl p-6 md:p-8">
+          <div className="bg-gray-50 border border-[#F5C300]/25 rounded-2xl p-6 md:p-8">
             <div className="text-[#F5C300] text-5xl font-black leading-none mb-4 opacity-40">"</div>
-            <p className="text-white text-base leading-relaxed mb-6">{r.text}</p>
+            <p className="text-gray-900 text-base leading-relaxed mb-6">{r.text}</p>
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#F5C300] flex items-center justify-center font-bold text-black text-sm">
                   {r.initials}
                 </div>
                 <div>
-                  <p className="font-bold text-white text-sm">{r.name}</p>
+                  <p className="font-bold text-gray-900 text-sm">{r.name}</p>
                   <p className="text-gray-500 text-xs">{r.role}</p>
                 </div>
               </div>
@@ -113,18 +113,18 @@ export default function Reviews() {
           {/* Other reviews stacked */}
           <div className="space-y-3">
             {reviews.filter((_, i) => i !== idx).slice(0, 3).map((rv) => (
-              <div key={rv.name} className="bg-[#0D0D0D] border border-[#1E1E1E] rounded-xl p-4 hover:border-[#F5C300]/20 transition-colors">
+              <div key={rv.name} className="bg-white border border-gray-200 rounded-xl p-4 hover:border-[#F5C300]/20 transition-colors">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 rounded-full bg-[#1E1E1E] flex items-center justify-center text-[#F5C300] text-xs font-bold">
+                  <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-[#F5C300] text-xs font-bold">
                     {rv.initials}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-white">{rv.name}</p>
-                    <p className="text-gray-600 text-xs">{rv.role}</p>
+                    <p className="text-sm font-semibold text-gray-900">{rv.name}</p>
+                    <p className="text-gray-500 text-xs">{rv.role}</p>
                   </div>
                   <Stars count={rv.rating} />
                 </div>
-                <p className="text-gray-400 text-xs leading-relaxed line-clamp-2">{rv.text}</p>
+                <p className="text-gray-600 text-xs leading-relaxed line-clamp-2">{rv.text}</p>
               </div>
             ))}
           </div>
@@ -134,7 +134,7 @@ export default function Reviews() {
         <div className="flex justify-center gap-2 mt-8">
           {reviews.map((_, i) => (
             <button key={i} onClick={() => setIdx(i)}
-              className={`h-1.5 rounded-full transition-all ${i === idx ? 'w-8 bg-[#F5C300]' : 'w-3 bg-[#2A2A2A]'}`} />
+              className={`h-1.5 rounded-full transition-all ${i === idx ? 'w-8 bg-[#F5C300]' : 'w-3 bg-gray-300'}`} />
           ))}
         </div>
       </div>

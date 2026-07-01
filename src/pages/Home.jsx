@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 const Home = () => {
 
 return (
-  <div className="md:px-7 bg-[#0A0A0A]">
+  <div className="md:px-7 bg-[#ffffff]">
       <Navbar />
       <Hero />
       <About />

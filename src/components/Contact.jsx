@@ -30,10 +30,10 @@ export default function Contact() {
     setTimeout(() => setSent(false), 4000);
   };
 
-  const inputClass = "w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-xl px-4 py-3 text-white text-sm placeholder-gray-600 focus:outline-none focus:border-[#F5C300]/50 transition-colors";
+  const inputClass = "w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-gray-900 text-sm placeholder-gray-400 focus:outline-none focus:border-[#F5C300]/50 transition-colors";
 
   return (
-    <section id="contact" className="py-20 bg-[#080808]">
+    <section id="contact" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center gap-3 mb-4">
           <div className="h-px w-8 bg-[#F5C300]" />
@@ -43,10 +43,10 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           {/* Left */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-black leading-tight mb-3">
+            <h2 className="text-3xl md:text-4xl font-black leading-tight mb-3 text-gray-900">
               Let's Discuss <span className="text-[#F5C300]">Your Project.</span>
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-8">
+            <p className="text-gray-600 leading-relaxed mb-8">
              Tell us about your project, and our team will provide the guidance and support you need to get started.
            </p>
 
@@ -57,8 +57,8 @@ export default function Contact() {
                   <Phone size={18} className="text-[#F5C300]" />
                 </div>
                 <div>
-                  <p className="text-white font-medium text-sm">Phone</p>
-                  <p className="text-gray-400 text-sm"> +234 802 407 6937</p>
+                  <p className="text-gray-900 font-medium text-sm">Phone</p>
+                  <p className="text-gray-600 text-sm"> +234 802 407 6937</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -66,8 +66,8 @@ export default function Contact() {
                   <MapPin size={18} className="text-[#F5C300]" />
                 </div>
                 <div>
-                  <p className="text-white font-medium text-sm">Location</p>
-                  <p className="text-gray-400 text-sm">Ibadan, Nigeria</p>
+                  <p className="text-gray-900 font-medium text-sm">Location</p>
+                  <p className="text-gray-600 text-sm">Ibadan, Nigeria</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -75,16 +75,16 @@ export default function Contact() {
                   <Clock size={18} className="text-[#F5C300]" />
                 </div>
                 <div>
-                  <p className="text-white font-medium text-sm">Working Hours</p>
-                  <p className="text-gray-400 text-sm">Mon - Sat: 8:00 AM - 7:00 PM </p>
+                  <p className="text-gray-900 font-medium text-sm">Working Hours</p>
+                  <p className="text-gray-600 text-sm">Mon - Sat: 8:00 AM - 7:00 PM </p>
                 </div>
               </div>
             </div>
 
             {/* Google Map */}
-            <div className="rounded-xl overflow-hidden border border-[#1E1E1E]">
+            <div className="rounded-xl overflow-hidden border border-gray-200">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.748423789123!2d3.9379!3d7.3775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10378f3f0f0f0f0f%3A0x0!2sIbadan%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3957.0433408274876!2d4.071795275000571!3d7.349030192659758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sShop%201%2C%20Beside%20Ola%20David%20School%2C%20Along%20Badeku%20Road%2C%20Badeku%2C%20Ibadan!5e0!3m2!1sen!2sng!4v1782908113762!5m2!1sen!2sng"
                 width="100%"
                 height="180"
                 style={{ border: 0 }}
@@ -97,8 +97,8 @@ export default function Contact() {
           </div>
 
           {/* Right — form */}
-          <div className="bg-[#111111] border border-[#1E1E1E] rounded-2xl p-4 sm:p-6">
-            <h3 className="font-bold text-white mb-5">Get a Free Quote</h3>
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-4 sm:p-6">
+            <h3 className="font-bold text-gray-900 mb-5">Get a Free Quote</h3>
 
             {/* Error Alert */}
             {error && (
@@ -110,19 +110,19 @@ export default function Contact() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1.5 block">Full Name</label>
+                <label className="text-gray-600 text-xs font-semibold uppercase tracking-wider mb-1.5 block">Full Name</label>
                 <input name="name" value={form.name} onChange={handle}
                   className={inputClass} placeholder="Your name" />
               </div>
 
               <div>
-                <label className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1.5 block">Phone</label>
+                <label className="text-gray-600 text-xs font-semibold uppercase tracking-wider mb-1.5 block">Phone</label>
                 <input name="phone" value={form.phone} onChange={handle}
                   className={inputClass} placeholder="0806 154 4551" />
               </div>
 
               <div>
-                <label className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1.5 block">Service Needed</label>
+                <label className="text-gray-600 text-xs font-semibold uppercase tracking-wider mb-1.5 block">Service Needed</label>
                 <select name="service" value={form.service} onChange={handle} className={inputClass}>
                   <option value="">Choose a service</option>
                   {services.map(s => <option key={s} value={s}>{s}</option>)}
@@ -130,7 +130,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1.5 block">Message</label>
+                <label className="text-gray-600 text-xs font-semibold uppercase tracking-wider mb-1.5 block">Message</label>
                 <textarea name="message" value={form.message} onChange={handle} rows={4}
                   className={inputClass + ' resize-none'} placeholder="Briefly describe your project..." />
               </div>
