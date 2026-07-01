@@ -12,18 +12,18 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 pt-14 pb-6">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto ">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 mb-12">
           {/* Brand */}
-          <div className="md:col-span-1">
+          <div className="md:col-span-1 ">
             <a href="#home" className="flex w-32 h-32">
             <img src="/secol-logo.png" alt="SECOL Electric Logo" className="w-full h-full" />
             </a>
-            <p className="text-gray-600 text-sm leading-relaxed mb-5">
+            <p className="text-gray-600 text-sm leading-relaxed mb-5 px-4">
               Reliable electrical, solar, security, and automation solutions for homes, businesses, and industrial facilities.
             </p>
             {/* Social */}
-            <div className="flex gap-3">
+            <div className="flex gap-3 px-4">
               <a href="https://facebook.com/secolelectricc" target="_blank" rel="noreferrer"
                 className="w-8 h-8 bg-gray-100 border border-gray-300 rounded-full flex items-center justify-center hover:border-[#F5C300]/40 transition-colors">
                 <svg className="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
 
           {/* Quick links */}
-          <div>
+          <div className='px-4'>
             <p className="text-xs font-bold tracking-widest uppercase text-gray-600 mb-4">Quick Links</p>
             <ul className="space-y-2.5">
               {quickLinks.map(l => (
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
 
           {/* Contact info */}
-          <div>
+          <div className='px-4'>
             <p className="text-xs font-bold tracking-widest uppercase text-gray-600 mb-4">Contact Information</p>
             <div className="space-y-3 text-sm text-gray-600">
               <p>0802 407 6937</p>
@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-200 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="border-t border-gray-200 pt-6 px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-gray-500 text-xs">© 2026 SECOL Electric. All Rights Reserved.</p>
           <p className="text-gray-400 text-xs">Ibadan, Oyo State, Nigeria</p>
         </div>

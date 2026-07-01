@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-[50] transition-all duration-300`}>
-      <div className={`max-w-6xl mx-auto px-4 h-16 flex items-center justify-between  ${scrolled ? 'bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm' : 'bg-transparent'}`}>
+      <div className={`max-w-6xl mx-auto pr-4 h-16 flex items-center justify-between  ${scrolled ? 'bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm' : 'bg-transparent'}`}>
         {/* Logo */}
        <a href="#home" className="flex w-36 h-36">
          <img src="/secol-logo.png" alt="SECOL Electric Logo" className="w-full h-full" />

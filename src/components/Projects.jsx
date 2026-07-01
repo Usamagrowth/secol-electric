@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 
 const projects = [
   {
-    image: '/solar-p.jpeg',
+    image: '/solar-p.jpg',
     title: 'Solar Panel Installation',
     category: 'Solar Energy',
     desc: 'Full rooftop solar panel array installed for a residential property in Ibadan.',
@@ -32,13 +32,6 @@ const projects = [
     category: 'Protection',
     desc: 'Lightning protection and earthing system installed to secure a multi-storey building.',
     color: 'from-purple-900/30 to-transparent',
-  },
-  {
-    image: '/cctv-p.jpeg',
-    title: 'CCTV Surveillance System',
-    category: 'Security',
-    desc: 'Multi-camera CCTV setup with remote viewing configured for a retail store.',
-    color: 'from-blue-900/30 to-transparent',
   },
   {
     image: '/cctv1-p.jpeg',
