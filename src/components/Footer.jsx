@@ -64,7 +64,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm text-gray-400">
               <p>0802 407 6937</p>
              <p className="leading-relaxed"> Shop 1, Beside Ola David School, Along Badeku Road, Badeku, Ibadan</p>
-              <p>Open 9:00 AM Closes at 7:00 PM</p>
+              <p>Open: 8:00 AM Closes 7: 00 PM</p>
             </div>
           </div>
         </div>

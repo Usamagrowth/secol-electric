@@ -3,18 +3,18 @@ import { ChevronDown, ArrowRight, Zap, Sun, Shield, CloudLightning, Wind, Home }
 
 const services = [
   {
+    icon: <Sun size={20} className="text-black" />,
+    title: 'Solar Energy Solutions',
+    desc: 'Reliable Solar & Electrical Solutions for Modern Homes and Businesses.',
+    items: ['Solar panel installation', 'Inverter & lithium battery systems', 'Solar maintenance & upgrades', 'Energy consultation & system sizing'],
+    cta: 'Go Solar Today',
+  },
+    {
     icon: <Zap size={20} className="text-black" />,
     title: 'Electrical Installation Services',
     desc: 'Safe, clean, and professional electrical installations for residential, commercial, and industrial properties.',
     items: ['Conduit wiring installation', 'Electrical fittings & accessories', 'Distribution board installation', 'Maintenance & electrical upgrades'],
     cta: 'Request Service',
-  },
-  {
-    icon: <Sun size={20} className="text-black" />,
-    title: 'Solar Energy Solutions',
-    desc: 'Reliable solar power systems designed to reduce electricity costs and provide uninterrupted power supply.',
-    items: ['Solar panel installation', 'Inverter & lithium battery systems', 'Solar maintenance & upgrades', 'Energy consultation & system sizing'],
-    cta: 'Go Solar Today',
   },
   {
     icon: <Shield size={20} className="text-black" />,

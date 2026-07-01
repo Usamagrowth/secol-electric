@@ -8,7 +8,7 @@ const reasons = [
   { num: '01', title: 'Experienced Professionals', desc: 'Our team brings practical knowledge and hands-on experience to every project.' },
   { num: '02', title: 'Quality Workmanship', desc: 'We focus on neat installations, attention to detail, and long-lasting results.' },
   { num: '03', title: 'Safety First', desc: 'Every installation is carried out with safety and industry best practices in mind.' },
-  { num: '04', title: 'Transparent Pricing', desc: 'Clear quotations with no hidden charges — you know exactly what you\'re paying for.' },
+  { num: '04', title: 'Transparent Pricing', desc: 'We provide clear, detailed quotations with transparent pricing, ensuring you understand the scope and cost of every project' },
   { num: '05', title: 'Reliable Support', desc: 'We\'re available to assist before, during, and after installation.' },
 ];
 
@@ -25,7 +25,7 @@ export default function WhyUs() {
           {/* Left */}
           <div>
             <h2 className="text-3xl md:text-4xl font-black leading-tight mb-6">
-              Electrical & Solar Done <span className="text-[#F5C300]">Right.</span>
+             Engineering solutions <span className="text-[#F5C300]">you can trust.</span>
             </h2>
             <p className="text-gray-400 leading-relaxed mb-10">
               We deliver electrical, solar, security, and power solutions with a commitment to safety, reliability, and customer satisfaction.

@@ -6,42 +6,49 @@ import 'swiper/css/navigation';
 
 const projects = [
   {
-    image: '/project1.jpg',
+    image: '/solar-p.jpeg',
     title: 'Solar Panel Installation',
     category: 'Solar Energy',
     desc: 'Full rooftop solar panel array installed for a residential property in Ibadan.',
     color: 'from-yellow-900/40 to-transparent',
   },
   {
-    image: '/project2.jpg',
+    image: '/solar1-p.jpeg',
     title: 'Solar Inverter & Battery Backup',
     category: 'Solar Energy',
     desc: 'Inverter and lithium battery system providing 24/7 backup power for a commercial office.',
     color: 'from-amber-900/40 to-transparent',
   },
   {
-    image: '/project1.jpg',
+    image: '/electrical-p.jpeg',
     title: 'Residential Electrical Wiring',
     category: 'Electrical',
     desc: 'Complete conduit wiring and distribution board installation for a new 4-bedroom duplex.',
     color: 'from-orange-900/30 to-transparent',
   },
   {
-    image: '/project2.jpg',
+    image: '/protection-p.jpeg',
     title: 'Thunder Arrestor Installation',
     category: 'Protection',
     desc: 'Lightning protection and earthing system installed to secure a multi-storey building.',
     color: 'from-purple-900/30 to-transparent',
   },
   {
-    image: '/project1.jpg',
+    image: '/cctv-p.jpeg',
     title: 'CCTV Surveillance System',
     category: 'Security',
     desc: 'Multi-camera CCTV setup with remote viewing configured for a retail store.',
     color: 'from-blue-900/30 to-transparent',
   },
   {
-    image: '/project2.jpg',
+    image: '/cctv1-p.jpeg',
+    title: 'CCTV Surveillance System',
+    category: 'Security',
+    desc: 'Multi-camera CCTV setup with remote viewing configured for a retail store.',
+    color: 'from-blue-900/30 to-transparent',
+  },
+  {
+    image: '/ac-p.jpeg',
     title: 'HVAC / AC Installation',
     category: 'HVAC',
     desc: 'Split unit AC installation and commissioning across 6 rooms in a commercial facility.',
@@ -68,11 +75,11 @@ export default function Projects() {
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-black leading-tight max-w-md">
-            Work We're <span className="text-[#F5C300]">Proud Of</span>
+           Delivering <span className="text-[#F5C300]">Quality Solutions</span>
           </h2>
           <p className="text-gray-400 text-sm max-w-sm">
-            Explore completed electrical, solar, CCTV, and lightning protection projects delivered with quality workmanship.
-          </p>
+           Explore completed solar, electrical, CCTV, and lightning protection projects delivered with quality workmanship.
+         </p>
         </div>
 
         {/* Swiper Container */}
@@ -117,7 +124,7 @@ export default function Projects() {
 
                   <div className="relative">
                     {/* Project Image */}
-                    <div className="w-full h-40 md:h-48 bg-[#1A1A1A] rounded-lg mb-4 flex items-center justify-center overflow-hidden border border-[#252525]">
+                    <div className="w-full h-64 sm:h-64 md:h-64 bg-[#1A1A1A] rounded-lg mb-4 flex items-center justify-center overflow-hidden border border-[#252525]">
                       <img
                         src={p.image}
                         alt={p.title}

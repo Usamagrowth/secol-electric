@@ -24,11 +24,11 @@ export default function About() {
               Powering Homes and Businesses with <span className="text-[#F5C300]">Reliable Solutions</span>
             </h2>
             <p className="text-gray-400 leading-relaxed mb-6">
-              SECOL Electric is a professional electrical and solar solutions company committed to delivering safe, reliable, and high-quality installations. From electrical wiring and solar energy systems to CCTV surveillance, thunder arrestor installation, HVAC services, and smart home solutions, we help homes and businesses achieve greater efficiency, safety, and peace of mind.
-            </p>
+             SECOL Electric is a professional solar and electrical solutions company committed to delivering safe, reliable, and high-quality installations. From electrical wiring and solar energy systems to CCTV surveillance, thunder arrestor installation, HVAC services, and smart home solutions, we help homes and businesses achieve greater efficiency, safety, and peace of mind.
+           </p>
             <p className="text-gray-400 leading-relaxed mb-8">
-              Based in Ibadan, Nigeria, our licensed team brings hands-on expertise to every project — big or small — with a commitment to getting it right the first time.
-            </p>
+             Based in Ibadan, Nigeria, SECOL Electric delivers professional solar and electrical solutions backed by technical expertise, quality workmanship, and a commitment to safety, reliability, and customer satisfaction.
+           </p>
 
             {/* Stats row */}
             <div className="flex gap-8">

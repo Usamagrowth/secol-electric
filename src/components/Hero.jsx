@@ -3,18 +3,18 @@ import { ArrowRight } from 'lucide-react';
 
 const slides = [
   {
-    headline: 'Reliable Electrical & Solar Solutions',
-    sub: 'for Modern Homes and Businesses',
-    desc: 'SECOL Electric delivers professional electrical, solar, and engineering solutions designed for safety, efficiency, reliability, and long-term performance.',
-    bg: 'from-[#1a1200] via-[#0f0a00] to-[#0A0A0A]',
-    badge: 'Electrical • Solar • Smart Solutions',
-  },
-  {
     headline: 'Go Solar, Cut Costs.',
     sub: 'Uninterrupted Power. Every Day.',
     desc: 'Professional solar panel and inverter installations tailored for Nigerian homes and businesses — designed to deliver clean energy and eliminate downtime.',
     bg: 'from-[#001a0a] via-[#000f05] to-[#0A0A0A]',
     badge: 'Solar Panels • Inverters • Batteries',
+  },
+   {
+    headline: 'Reliable Electrical & Solar Solutions',
+    sub: 'for Modern Homes and Businesses',
+    desc: 'SECOL Electric delivers professional electrical, solar, and engineering solutions designed for safety, efficiency, reliability, and long-term performance.',
+    bg: 'from-[#1a1200] via-[#0f0a00] to-[#0A0A0A]',
+    badge: 'Electrical • Solar • Smart Solutions',
   },
   {
     headline: 'Secure, Automate.',

@@ -3,32 +3,39 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const reviews = [
   {
-    name: 'Shindharah Ayo',
+    name: 'Goal Achiever',
+    role: 'Business Owner',
+    rating: 5,
+    text: 'Honestly didn’t think I’d be the type to leave a review but this man deserves it. Got my solar panel installed and the difference is night and day; literally. 24 hours of electricity, no interruptions, no stress. I didn’t realize how much power cuts were affecting my day to day until they just… stopped.The installation was clean, he knew exactly what he was doing, explained everything without making me feel dumb about it, and didn’t leave a mess behind. Professional from start to finish. If you’re on the fence about solar, stop thinking and just do it. And if you’re looking for someone who actually knows their work, this is your guy. 10/10 no hesitation.',
+    initials: 'GA',
+  },
+  {
+    name: 'Shin dha rah Ayo',
     role: 'Nail Studio Owner',
     rating: 5,
-    text: 'He handled all the electrical installations for my nail studio, and I\'m really impressed with the quality of his work. Everything was done efficiently, safely, and on time. Definitely someone I\'d recommend for any electrical project!',
+    text: 'He handled all the electrical installations for my nail studio, and I’m really impressed with the quality of his work. Everything was done efficiently, safely, and on time. Definitely someone I’d recommend for any electrical project!',
     initials: 'SA',
   },
   {
-    name: 'Taiwo Adewale',
-    role: 'Homeowner',
-    rating: 5,
-    text: 'You choose SECOL Electric, you choose the best. I\'m so impressed with his work — so fast, perfect and very neat. I\'m so glad that I chose right.',
-    initials: 'TA',
-  },
-  {
-    name: 'Bisi Okonkwo',
+    name: 'Hassan Adul Rasaq',
     role: 'Business Owner',
     rating: 5,
-    text: 'Professional team, excellent delivery. They installed our solar system and we\'ve had zero issues since. Very transparent with pricing — no surprises at the end.',
-    initials: 'BO',
+    text: 'SECOL Electric truly outdid themselves with their exceptional service! Their team of expert electricians delivered safe, efficient, and reliable electrical solutions, showcasing their years of experience and expertise. From wiring and installations to maintenance, they handled everything with precision and care. Whether residential, commercial, or industrial, SECOL Electric is a trusted and licensed contractor you can count on. Highly recommended by Rhozlhan Energy and Gadget.',
+    initials: 'HR',
   },
   {
-    name: 'Emmanuel Faleye',
-    role: 'Estate Manager',
+    name: 'Rofiat Ajibola',
+    role: 'House Owner',
     rating: 5,
-    text: 'SECOL handled the complete wiring and CCTV setup for our estate. Very skilled, tidy work, and they explained everything clearly. Highly recommended.',
-    initials: 'EF',
+    text: '@SECOL thank you so much for doing the neat work for us our house is so beautiful now even the wiring is so neat💯. Don’t worry you will see customers from us trust me my mum even said we should greet you very well for all the work you did for us. Thank you so much God will bless you and your company insha Allah we really appreciate a lot 🙏💯😍',
+    initials: 'RA',
+  },
+   {
+    name: 'Oluleye Abosede Mary',
+    role: 'House Owner',
+    rating: 5,
+    text: 'Secol electrics every day,every time. More than a year working experience with me and I can testify that secol is affordable, reliable and dependable any day,any time. Thanks so much for the neat and stress-free work done ✅ I recommend u 100% From a satisfied customer Marybee🤟',
+    initials: 'MB',
   },
 ];
 
@@ -69,7 +76,7 @@ export default function Reviews() {
               <div className="flex items-center gap-1.5 bg-[#1A1A1A] border border-[#2A2A2A] rounded-full px-3 py-1.5">
                 <Stars count={5} />
                 <span className="text-white font-bold text-sm ml-1">4.6</span>
-                <span className="text-gray-500 text-xs">/ 13+ reviews</span>
+                <span className="text-gray-500 text-xs">/ 14+ reviews</span>
               </div>
             </div>
           </div>

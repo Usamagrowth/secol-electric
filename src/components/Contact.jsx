@@ -47,8 +47,8 @@ export default function Contact() {
               Let's Discuss <span className="text-[#F5C300]">Your Project.</span>
             </h2>
             <p className="text-gray-400 leading-relaxed mb-8">
-              Tell us about your project, and our team will provide the guidance and support you need to get started. No pushy sales — just honest answers.
-            </p>
+             Tell us about your project, and our team will provide the guidance and support you need to get started.
+           </p>
 
             {/* Contact Info */}
             <div className="space-y-4 mb-8">
@@ -58,7 +58,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-white font-medium text-sm">Phone</p>
-                  <p className="text-gray-400 text-sm">+234 806 154 4551</p>
+                  <p className="text-gray-400 text-sm"> +234 802 407 6937</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -76,7 +76,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-white font-medium text-sm">Working Hours</p>
-                  <p className="text-gray-400 text-sm">Mon - Sat: 8:00 AM - 6:00 PM</p>
+                  <p className="text-gray-400 text-sm">Mon - Sat: 8:00 AM - 7:00 PM </p>
                 </div>
               </div>
             </div>
